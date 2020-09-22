@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "outFile" : "../../script.js"
+  },
+  "files": [
+    "page.ts",
+    "Z_Home.ts"
+  ]
+}

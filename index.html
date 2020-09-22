@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts/core.js"></script>
+<script src="scripts/script.js"></script>
+<style>
+    .lead_user_info{
+        padding: 20px;
+    }
+
+    .lead_user_info label{
+        margin-bottom: 20px;
+    }
+
+    .popup{
+        width: 500px;
+        height: 256px;
+        border: 1px solid #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .logo-block{
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-block img{
+        max-width: 100%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .company-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .company-items label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+<body>
+<form class="lead_user_info">
+    <label>
+        Name
+        <input type="text" value="" name="name"/>
+    </label>
+    <label>
+        Phone
+        <input type="text" value="" name="phone"/>
+    </label>
+    <label>
+        E-mail
+        <input type="text" value="" name="email"/>
+    </label>
+    <button type="submit" class="send">Send</button>
+</form>
+
+<div class="popup" style="display: none;">
+    <form class="company_list">
+        <div class="company-items">
+            <label data-id="1">
+                <div class="logo-block"><img src="images/logo1.png"></div>
+                <input type="checkbox" />
+            </label>
+            <label data-id="2">
+                <div class="logo-block"><img src="images/logo1.png"></div>
+                <input type="checkbox" value=""/>
+            </label>
+        </div>
+        <div class="action-blcok">
+            <button type="submit" class="re-send">Re-send</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
